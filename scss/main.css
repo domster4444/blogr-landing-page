@@ -1,6 +1,7 @@
 /*! Flickity v2.2.2
 https://flickity.metafizzy.co
 ---------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 .flickity-enabled {
   position: relative;
 }
@@ -1287,7 +1288,7 @@ button {
 button {
   outline: none;
   border: none;
-  padding: 1.4rem 3.4rem;
+  padding: 1.8rem 3.4rem;
   cursor: pointer;
 }
 
@@ -1716,6 +1717,7 @@ footer ul li:hover {
 }
 
 #firstDivision-inner-wrapper h2 {
+  font-weight: 500;
   color: white;
   font-size: 7.5rem;
   text-align: center;
@@ -1736,12 +1738,13 @@ footer ul li:hover {
 #firstDivision-inner-wrapper p {
   color: white;
   margin-top: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 #firstDivision-inner-wrapper #firstDivision-btn-container-division {
   display: flex;
+  margin-top: 2.5rem;
   justify-content: center;
   padding: 2rem;
   flex-wrap: wrap;
@@ -1810,7 +1813,7 @@ footer ul li:hover {
   color: #a9a9a9;
   line-height: 2.5rem;
   margin-top: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 826px) {
@@ -1942,4 +1945,180 @@ footer ul li:hover {
   #secondLastDivision #right-division img {
     height: 35rem !important;
   }
+}
+
+[id^='btn']:checked + ul {
+  display: block;
+}
+
+#nav-division {
+  position: relative;
+}
+
+.hamburger {
+  z-index: 10000;
+  right: 0;
+  position: absolute;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  width: 80%;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+.hamburger label {
+  color: #575971;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger .button span {
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+
+.hamburger .button span.rotate {
+  transform: rotate(-180deg);
+}
+
+.hamburger ul {
+  position: absolute;
+  background: white;
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+
+.hamburger .menu:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.hamburger ul li {
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.hamburger ul li label {
+  text-align: center;
+  font-size: 18px;
+}
+
+.hamburger ul li a {
+  text-align: center;
+  color: #575971;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.hamburger ul li a:hover,
+.hamburger ul li label:hover {
+  color: #ff6162;
+}
+
+.hamburger ul li span.rotate {
+  transform: rotate(-180deg);
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger ul li span {
+  position: absolute;
+  color: #ff6162;
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 20px;
+  transition: 0.5s;
+}
+
+.hamburger ul ul li a {
+  color: grey;
+  font-size: 16px;
+}
+
+.hamburger ul ul li {
+  background: #f3f2f2;
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+
+@media (min-width: 601px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.hamburger ul ul {
+  position: static;
+}
+
+.hamburger hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  background: #d0cfcf;
+  height: 0.05rem;
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.hamburger .center-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hamburger .center-btn-container button {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 3rem;
+  padding: 2rem 5rem;
+  color: white;
+  background: linear-gradient(90deg, rgba(255, 133, 110, 0.9) 21%, rgba(255, 83, 93, 0.9) 77%);
+}
+
+#lines-container div {
+  height: 0.3rem;
+  background-color: white;
+  margin: 0.7rem 0rem;
+  width: 3rem;
+}
+
+#beginning-of-oppagamnam-style {
+  margin-top: 3.5rem;
+}
+
+#hamburger-login-btn {
+  text-align: center;
+  font-size: 19px;
 }

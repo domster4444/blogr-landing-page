@@ -21,6 +21,7 @@
   );
 
   h2 {
+    font-weight: 500;
     color: white;
     font-size: 7.5rem;
     text-align: center;
@@ -34,12 +35,13 @@
   p {
     color: white;
     margin-top: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   #firstDivision-btn-container-division {
     display: flex;
+    margin-top: 2.5rem;
     justify-content: center;
     padding: 2rem;
     flex-wrap: wrap;
@@ -104,7 +106,7 @@
       color: #a9a9a9;
       line-height: 2.5rem;
       margin-top: 2rem;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       // background-color: green;
       @include media('<=826px') {
         font-size: 1.7rem;
@@ -214,4 +216,172 @@
       }
     }
   }
+}
+// ________________________________________________HAMBURGER
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+[id^='btn']:checked + ul {
+  display: block;
+}
+
+#nav-division {
+  position: relative;
+}
+
+.hamburger {
+  z-index: 10000;
+  right: 0;
+  position: absolute;
+
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  width: 80%;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
+  label {
+    // *_____COLOR
+    color: #575971;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+  }
+  .button span {
+    float: right;
+    line-height: 40px;
+    transition: 0.5s;
+  }
+  .button span.rotate {
+    transform: rotate(-180deg);
+  }
+  ul {
+    position: absolute;
+    background: white;
+    list-style: none;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+  }
+  // ___PIVOT Mountain above .hamburger ___________
+  .menu:before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    right: 20px;
+    top: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  ul li {
+    line-height: 40px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  ul li label {
+    text-align: center;
+    font-size: 18px;
+  }
+  ul li a {
+    text-align: center;
+    // *____COLOR
+    color: #575971;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  ul li a:hover,
+  ul li label:hover {
+    //todo: ______COLOR CHANGE ON HOVER
+    color: rgb(255, 97, 98);
+  }
+  ul li span.rotate {
+    transform: rotate(-180deg);
+  }
+  input {
+    display: none;
+  }
+  ul li span {
+    position: absolute;
+    color: rgb(255, 97, 98);
+
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    padding: 0 20px;
+    transition: 0.5s;
+  }
+  ul ul li a {
+    //? _____OPENED MENUS COLOR ________
+    color: grey;
+    font-size: 16px;
+  }
+  ul ul li {
+    background: rgb(243, 242, 242);
+    line-height: 30px;
+    padding-left: 30px;
+    border-bottom: none;
+  }
+  @include media('>=601px') {
+    display: none;
+  }
+  @include media('<=600px') {
+    display: block;
+  }
+  ul ul {
+    position: static;
+  }
+
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    background: rgb(208, 207, 207);
+    height: 0.05rem;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .center-btn-container {
+    display: flex;
+    justify-content: center;
+    button {
+      font-size: 1.9rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      border-radius: 3rem;
+      padding: 2rem 5rem;
+      color: white;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 133, 110, 0.9) 21%,
+        rgba(255, 83, 93, 0.9) 77%
+      );
+    }
+  }
+}
+
+#lines-container {
+  div {
+    height: 0.3rem;
+    background-color: white;
+    margin: 0.7rem 0rem;
+    width: 3rem;
+  }
+}
+
+#beginning-of-oppagamnam-style {
+  margin-top: 3.5rem;
+}
+#hamburger-login-btn {
+  text-align: center;
+  font-size: 19px;
 }

@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <!-- font-family: 'Ubuntu', sans-serif; -->
 
@@ -30,6 +35,62 @@
       <header id="blogr-header">
         <nav id="blogr-navigation">
           <ul id="nav-division">
+            <!-- ___________________________________HAMBURGER  -->
+            <nav class="hamburger">
+              <label for="btn" class="button">
+                <span id="lines-container" class="">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </span>
+              </label>
+              <input type="checkbox" id="btn" />
+              <ul class="menu">
+                <li id="beginning-of-oppagamnam-style">
+                  <label for="btn-1" class="first regular">
+                    Product
+                    <span class="fas fa-angle-down"></span>
+                  </label>
+                  <input type="checkbox" id="btn-1" />
+                  <ul>
+                    <li><a class="regular" href="#">Contact</a></li>
+                    <li><a class="regular" href="#">Newsletter</a></li>
+                    <li><a class="regular" href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <label for="btn-2" class="first regular">
+                    Company
+                    <span class="fas fa-angle-down"></span>
+                  </label>
+                  <input type="checkbox" id="btn-2" />
+                  <ul>
+                    <li><a class="regular" href="#">Contact</a></li>
+                    <li><a class="regular" href="#">Newsletter</a></li>
+                    <li><a class="regular" href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <label for="btn-3" class="first regular">
+                    Connect
+                    <span class="fas fa-angle-down"></span>
+                  </label>
+                  <input type="checkbox" id="btn-3" />
+                  <ul>
+                    <li><a class="regular" href="#">Contact</a></li>
+                    <li><a class="regular" href="#">Newsletter</a></li>
+                    <li><a class="regular" href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+                <hr />
+                <div id="hamburger-login-btn" class="regular">Login</div>
+                <div class="center-btn-container">
+                  <button class="regular">Sign Up</button>
+                </div>
+              </ul>
+            </nav>
+            <!-- ------------------------------------hamburger  -->
+
             <ul id="left-nav">
               <li class="bold logo">Blogr</li>
               <li class="semi-light nav-menu">Product</li>
@@ -50,7 +111,7 @@
       <!-- ______________________________________________DIVISION 1  -->
       <section id="fistDivision">
         <div id="firstDivision-inner-wrapper">
-          <h2 class="regular">A modern publishing platform</h2>
+          <h2 class="semi-light">A modern publishing platform</h2>
           <p class="semi-light">
             Grow your audience and build your online brand
           </p>
