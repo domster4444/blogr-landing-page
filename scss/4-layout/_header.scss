@@ -1,0 +1,80 @@
+#blogr {
+  ul {
+    list-style: none;
+    // _______________________________ aft 600< li displayed as none but ul still is there
+    // background-color: red;
+    // height: 5rem;
+    // ___________________________________
+
+    li {
+      padding: 1rem;
+      transition: all ease-in-out 300ms;
+      cursor: pointer;
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+  position: relative;
+  #blogr-header {
+    // ______
+    width: 100%;
+    position: absolute;
+    margin-top: 2rem;
+    // background: red;
+    #blogr-navigation {
+      //   background: yellow;
+      padding: 0.5rem;
+      #nav-division {
+        @include flexi;
+        justify-content: space-between;
+        #left-nav {
+          @include flexv;
+          //   background: green;
+          .nav-menu:hover {
+          }
+          li {
+            color: white;
+            margin: 0.2rem 2rem;
+            font-size: 2.2rem;
+            @include media('<=600px') {
+              display: none;
+            }
+          }
+          .logo {
+            @include media('<=600px') {
+              display: block;
+            }
+            font-size: 5rem;
+          }
+        }
+        #right-nav {
+          @include media('<=600px') {
+            display: none;
+          }
+          @include flexv;
+          //   background: blue;
+          li {
+            margin: 0.2rem 2rem;
+            font-size: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// "login" as menu
+.nav-menu {
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header-signup-btn {
+  color: rgb(255, 89, 96);
+  &:hover {
+    background: rgb(254, 124, 134);
+    color: white;
+  }
+}

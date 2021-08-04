@@ -1,0 +1,31 @@
+@mixin flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex($a, $b) {
+  display: flex;
+  justify-content: $a;
+  align-items: $b;
+  flex-wrap: wrap;
+}
+
+// ___________________________
+@mixin flexi {
+  display: flex;
+}
+@mixin flexv {
+  display: flex;
+  align-items: center;
+}
+@mixin flexh {
+  display: flex;
+  justify-content: center;
+}
+@mixin flexvh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

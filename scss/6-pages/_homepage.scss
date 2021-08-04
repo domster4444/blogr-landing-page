@@ -1,0 +1,217 @@
+// ___________________________________FIRST DIVISION____________________________________
+
+#fistDivision {
+  background-image: url('../../assets/firstDivision/bg-pattern-intro.svg');
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 8rem;
+}
+#firstDivision-inner-wrapper {
+  border-bottom-left-radius: 8rem;
+  // +++++++++++++++
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  @include media('<=600px') {
+    padding-bottom: 10rem;
+  }
+  background: linear-gradient(
+    90deg,
+    rgba(255, 133, 110, 0.9) 21%,
+    rgba(255, 83, 93, 0.9) 77%
+  );
+
+  h2 {
+    color: white;
+    font-size: 7.5rem;
+    text-align: center;
+    @include media('<=675px') {
+      font-size: 6.5rem;
+    }
+    @include media('<=535px') {
+      font-size: 4.5rem;
+    }
+  }
+  p {
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #firstDivision-btn-container-division {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    button {
+      margin: 2rem;
+      font-size: 2.1rem;
+    }
+  }
+}
+
+.learn-more-btn {
+  &:hover {
+    background: white;
+    color: rgb(255, 89, 96);
+  }
+}
+
+// ______________________________________________SECOND DIVISION
+#secondDivision-title {
+  position: relative;
+  div {
+    position: absolute;
+    top: 10rem;
+    font-size: 2.6rem;
+    // background-color: red;
+    width: 100%;
+    text-align: center;
+  }
+}
+#secondDivision {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 25rem;
+  margin-top: 5rem;
+  // background-color: lightblue;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  #left-division {
+    padding-top: 25rem;
+    h2 {
+      font-size: 3.3rem;
+      text-align: right;
+      // background-color: red;
+    }
+    h3 {
+      @include media('<=600px') {
+        text-align: center;
+      }
+      color: rgb(87, 89, 113);
+
+      font-size: 1.8rem;
+      // background-color: blue;
+    }
+    h3:nth-child(3) {
+      margin-top: 5rem;
+    }
+    p {
+      width: 45rem;
+
+      color: #a9a9a9;
+      line-height: 2.5rem;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      // background-color: green;
+      @include media('<=826px') {
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+      }
+      @include media('<=600px') {
+        text-align: center;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+  }
+  // background-color: lightcoral;
+
+  #right-division {
+    img {
+      margin-top: 5rem;
+      @include media('>=890px') {
+        position: absolute;
+        right: -25rem !important;
+      }
+
+      height: 70rem !important;
+      @include media('<=940px') {
+        height: 60rem !important;
+      }
+      @include media('<=550px') {
+        height: 40rem;
+      }
+      @include media('<=540px') {
+        height: 35rem !important;
+      }
+    }
+  }
+}
+// _________________________SECOND LAST DIVISION
+
+#secondLastDivision {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 25rem;
+  margin-top: 5rem;
+  // background-color: lightblue;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  // ???flex-direction: row-reverse; --remove it
+  #left-division {
+    padding-top: 25rem;
+    h2 {
+      font-size: 3.3rem;
+      text-align: right;
+      // background-color: red;
+    }
+    h3 {
+      @include media('<=600px') {
+        text-align: center;
+      }
+      color: rgb(87, 89, 113);
+      font-size: 1.9rem;
+      // background-color: blue;
+    }
+    h3:nth-child(3) {
+      margin-top: 5rem;
+    }
+    p {
+      width: 45rem;
+
+      color: #a9a9a9;
+      line-height: 2.5rem;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      // background-color: green;
+      @include media('<=826px') {
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+      }
+      @include media('<=600px') {
+        text-align: center;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+  }
+  // background-color: lightcoral;
+
+  #right-division {
+    img {
+      margin-top: 5rem;
+      @include media('>=890px') {
+        position: absolute;
+        // ????right: -15rem !important; ---add it and remove below line
+        left: -25rem !important;
+      }
+
+      height: 70rem !important;
+      @include media('<=940px') {
+        height: 60rem !important;
+      }
+      @include media('<=550px') {
+        height: 40rem;
+      }
+      @include media('<=540px') {
+        height: 35rem !important;
+      }
+    }
+  }
+}

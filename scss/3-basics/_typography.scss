@@ -1,0 +1,57 @@
+// Lato Regular
+
+// .lato_regular_base{
+//     font-family: 'Lato_Lighty';
+//     color: black;
+//     font-weight: 400;
+// }
+// .lato_regular_10{
+//     @extend .lato_regular_base;
+//     font-size: 10px;
+// }
+// .lato_regular_11{
+//     @extend .lato_regular_base;
+//     font-size: 11px;
+// }
+// .lato_regular_12{
+//     @extend .lato_regular_base;
+//     font-size: 12px;
+// }
+// .lato_regular_13{
+//     @extend .lato_regular_base;
+//     font-size: 13px;
+// }
+// .lato_regular_14{
+//     @extend .lato_regular_base;
+//     font-size: 14px;
+// }
+
+// poppins Regular
+
+.overpass_base {
+  font-family: 'Overpass', sans-serif;
+}
+.ubuntu_base {
+  font-family: 'Ubuntu', sans-serif;
+}
+.light {
+  font-weight: 300;
+  @extend .overpass_base;
+}
+
+.semi-light {
+  font-weight: 400;
+  @extend .ubuntu_base;
+}
+.regular {
+  font-weight: 500;
+  @extend .ubuntu_base;
+}
+.semi-bold {
+  font-weight: 600;
+  @extend .overpass_base;
+}
+.bold {
+  font-weight: 700;
+  @extend .ubuntu_base;
+}

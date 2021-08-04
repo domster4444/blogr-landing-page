@@ -1,0 +1,26 @@
+.rounded-btn {
+  border-radius: 4rem;
+}
+button {
+  outline: none;
+  border: none;
+  padding: 1.4rem 3.4rem;
+  cursor: pointer;
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.primary-btn {
+  background: #fe7c86;
+  color: white;
+  &:hover {
+    background: white;
+    color: #fe7c86;
+  }
+}
+.ghost-btn {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}

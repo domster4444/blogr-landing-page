@@ -1,0 +1,60 @@
+footer {
+  border-top-right-radius: 7rem;
+
+  .light {
+    margin: 00;
+    line-height: 1rem;
+    font-size: 1.4rem;
+  }
+  padding: 5rem 0rem;
+  background: rgb(45, 46, 64);
+  color: white;
+  .footer-logo {
+    font-size: 4rem;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  ul {
+    @include media('<=phone') {
+      transform: translateX(-50%);
+      margin-left: 50%;
+    }
+
+    li {
+      color: rgb(199, 196, 196);
+      font-size: 1.7rem;
+
+      @include media('<=phone') {
+        font-size: 2rem;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#footer-division > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  @include media('<=phone') {
+    flex-direction: column;
+    justify-content: center;
+  }
+  justify-content: space-evenly;
+}
+
+.list-title {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+  &:hover {
+    text-decoration: none;
+  }
+}
