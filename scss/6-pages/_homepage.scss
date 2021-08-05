@@ -64,11 +64,15 @@
   position: relative;
   div {
     position: absolute;
-    top: 10rem;
-    font-size: 2.6rem;
+    top: 15rem;
+    font-size: 3.6rem;
     // background-color: red;
+    @include media('>=700px') {
+      left: 5rem;
+    }
     width: 100%;
     text-align: center;
+    color: #575971;
   }
 }
 #secondDivision {
@@ -136,6 +140,10 @@
       @include media('<=550px') {
         height: 40rem;
       }
+
+      @include media('<=600px') {
+        height: 34rem !important;
+      }
       @include media('<=540px') {
         height: 35rem !important;
       }
@@ -147,7 +155,12 @@
 #secondLastDivision {
   padding-left: 2rem;
   padding-right: 2rem;
+
   padding-bottom: 25rem;
+  // fix extra padding on mobile
+  @include media('<=756px') {
+    padding-bottom: 5rem;
+  }
   margin-top: 5rem;
   // background-color: lightblue;
 
@@ -159,6 +172,11 @@
   // ???flex-direction: row-reverse; --remove it
   #left-division {
     padding-top: 25rem;
+    // fix extra padding on mobile
+    @include media('<=756px') {
+      padding-top: 5rem;
+    }
+
     h2 {
       font-size: 3.3rem;
       text-align: right;
@@ -210,7 +228,10 @@
         height: 60rem !important;
       }
       @include media('<=550px') {
-        height: 40rem;
+        height: 34rem;
+      }
+      @include media('<=600px') {
+        height: 34rem !important;
       }
       @include media('<=540px') {
         height: 35rem !important;
@@ -457,7 +478,6 @@
 }
 //! _________________________THIRD DIVISION MOBILE FIRST
 #thirdDivision-mobile-first {
-  height: 45rem;
   @include media('>=940px') {
     display: none !important;
   }
@@ -479,6 +499,7 @@
     // background-color: red;
     position: relative;
     width: 100%;
+    height: 40rem;
     #bg-circle-pattern-d3 {
       @include media('<=415px') {
         height: 130%;
@@ -515,8 +536,7 @@
         width: 80%;
       }
       text-align: center;
-      color: rgb(201, 201, 201);
-
+      color: #a9a9a9;
       line-height: 3.2rem;
       margin-top: 2rem;
       font-size: 1.6rem;

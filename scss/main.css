@@ -1791,10 +1791,17 @@ footer ul li:hover {
 
 #secondDivision-title div {
   position: absolute;
-  top: 10rem;
-  font-size: 2.6rem;
+  top: 15rem;
+  font-size: 3.6rem;
   width: 100%;
   text-align: center;
+  color: #575971;
+}
+
+@media (min-width: 700px) {
+  #secondDivision-title div {
+    left: 5rem;
+  }
 }
 
 #secondDivision {
@@ -1878,6 +1885,12 @@ footer ul li:hover {
   }
 }
 
+@media (max-width: 600px) {
+  #secondDivision #right-division img {
+    height: 34rem !important;
+  }
+}
+
 @media (max-width: 540px) {
   #secondDivision #right-division img {
     height: 35rem !important;
@@ -1895,10 +1908,22 @@ footer ul li:hover {
   flex-direction: row-reverse;
 }
 
+@media (max-width: 756px) {
+  #secondLastDivision {
+    padding-bottom: 5rem;
+  }
+}
+
 #secondLastDivision #left-division {
   padding-top: 25rem;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 756px) {
+  #secondLastDivision #left-division {
+    padding-top: 5rem;
+  }
 }
 
 #secondLastDivision #left-division h2 {
@@ -1962,7 +1987,13 @@ footer ul li:hover {
 
 @media (max-width: 550px) {
   #secondLastDivision #right-division img {
-    height: 40rem;
+    height: 34rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #secondLastDivision #right-division img {
+    height: 34rem !important;
   }
 }
 
@@ -2218,7 +2249,6 @@ footer ul li:hover {
 }
 
 #thirdDivision-mobile-first {
-  height: 45rem;
   padding-top: 5rem;
   padding-left: 0rem;
   padding-right: 0rem;
@@ -2244,6 +2274,7 @@ footer ul li:hover {
   margin-left: 50%;
   position: relative;
   width: 100%;
+  height: 40rem;
 }
 
 #thirdDivision-mobile-first #left-division #bg-circle-pattern-d3 {
@@ -2289,7 +2320,7 @@ footer ul li:hover {
   transform: translateX(-50%);
   width: 50%;
   text-align: center;
-  color: #c9c9c9;
+  color: #a9a9a9;
   line-height: 3.2rem;
   margin-top: 2rem;
   font-size: 1.6rem;
