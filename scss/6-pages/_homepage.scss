@@ -152,6 +152,7 @@
   // background-color: lightblue;
 
   display: flex;
+
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -239,7 +240,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: transparent;
-  width: 80%;
+  width: 90%;
   line-height: 40px;
   padding: 8px 25px;
   border-radius: 5px;
@@ -268,6 +269,9 @@
     width: 100%;
     border-radius: 5px;
     display: none;
+  }
+  .menu {
+    box-shadow: 0px 0px 25px 1px rgba(169, 138, 138, 0.5);
   }
   // ___PIVOT Mountain above .hamburger ___________
   .menu:before {
@@ -325,10 +329,8 @@
     font-size: 16px;
   }
   ul ul li {
-    background: rgb(243, 242, 242);
     line-height: 30px;
     padding-left: 30px;
-    border-bottom: none;
   }
   @include media('>=601px') {
     display: none;
@@ -337,7 +339,12 @@
     display: block;
   }
   ul ul {
+    //??????___________________________inner menu box______________
+    background: rgb(243, 242, 242);
+    padding: 3rem 0rem;
+    border-bottom: none;
     position: static;
+    margin: 2rem 0rem;
   }
 
   hr {
@@ -382,6 +389,138 @@
   margin-top: 3.5rem;
 }
 #hamburger-login-btn {
+  color: rgb(87, 89, 113);
   text-align: center;
   font-size: 19px;
+}
+// !__FIX
+#blogr ul li {
+  padding: 1rem 4rem;
+}
+// ____________________EASIEST DIVISION
+
+//* _________________________THIRD DIVISION
+#thirdDivision {
+  height: 30rem;
+
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  background-color: #303145;
+  @include media('<=940px') {
+    display: none !important;
+  }
+  padding-right: 10rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  #left-division {
+    overflow: hidden;
+    // background-color: red;
+    position: relative;
+    width: 60rem;
+    #bg-circle-pattern-d3 {
+      position: absolute;
+      left: -10rem;
+      top: -23rem;
+      height: 200%;
+    }
+  }
+  #phone-illustration-d3 {
+    position: absolute;
+    z-index: 1000;
+    left: 10rem;
+    top: -6rem;
+    height: 170%;
+  }
+  #right-division {
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 2.5rem;
+      color: white;
+    }
+    p {
+      width: 45rem;
+
+      color: white;
+      line-height: 2.5rem;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    position: relative;
+    // background-color: blue;
+  }
+}
+//! _________________________THIRD DIVISION MOBILE FIRST
+#thirdDivision-mobile-first {
+  @include media('>=940px') {
+    display: none !important;
+  }
+  padding-top: 5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 15rem;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  margin-top: 5rem;
+  background-color: #303145;
+  padding-right: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  #left-division {
+    transform: translateX(-50%);
+    margin-left: 50%;
+    // background-color: red;
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    #bg-circle-pattern-d3 {
+      @include media('<=415px') {
+        height: 130%;
+        left: -15rem;
+      }
+      position: absolute;
+      left: -19rem;
+      top: -15rem;
+      height: 150%;
+    }
+  }
+  #phone-illustration-d3 {
+    position: absolute;
+    z-index: 1000;
+    top: -15rem;
+    left: -5rem;
+    height: 120%;
+    @include media('<=415px') {
+      height: 100%;
+    }
+  }
+  #right-division {
+    h2 {
+      text-align: center;
+      font-size: 3.8rem;
+      color: white;
+    }
+    p {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+
+      @include media('<=660px') {
+        width: 80%;
+      }
+      text-align: center;
+      color: #a9a9a9;
+      line-height: 3.2rem;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+
+    position: relative;
+    // background-color: blue;
+  }
 }
