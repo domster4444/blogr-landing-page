@@ -8,7 +8,6 @@
 
     li {
       padding: 1rem;
-      transition: all ease-in-out 300ms;
       cursor: pointer;
       button {
         cursor: pointer;
@@ -29,27 +28,54 @@
         @include flexi;
         justify-content: space-between;
         #left-nav {
+          //*********________________SUBMENU DROPDOWN _________________
+
+          .sub-menus {
+            visibility: hidden;
+            margin-top: 2rem;
+            border-radius: 0.5rem;
+            padding: 2rem 0.5rem;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+
+            li {
+              color: black;
+
+              &:hover {
+                font-weight: bold;
+              }
+            }
+          }
+
           @include flexv;
           //   background: green;
-          .nav-menu:hover {
+          .nav-menu:hover > .sub-menus {
+            visibility: visible;
           }
+
+          .nav-menu {
+            padding: 5rem;
+            // background-color: red;
+          }
+
           li {
             color: white;
             margin: 0.2rem 2rem;
-            font-size: 2.2rem;
-            @include media('<=600px') {
+            font-size: 1.4rem;
+            @include media('<=1100px') {
               display: none;
             }
           }
           .logo {
-            @include media('<=600px') {
+            @include media('<=1100px') {
               display: block;
             }
             font-size: 5rem;
           }
         }
         #right-nav {
-          @include media('<=600px') {
+          @include media('<=1100px') {
             display: none;
           }
           @include flexv;

@@ -265,8 +265,9 @@
     background: white;
     list-style: none;
     top: 75px;
-    left: 0;
+    right: 0;
     width: 100%;
+
     border-radius: 5px;
     display: none;
   }
@@ -332,10 +333,10 @@
     line-height: 30px;
     padding-left: 30px;
   }
-  @include media('>=601px') {
+  @include media('>=1100px') {
     display: none;
   }
-  @include media('<=600px') {
+  @include media('<=1100px') {
     display: block;
   }
   ul ul {
@@ -439,14 +440,14 @@
     flex-direction: column;
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.9rem;
       color: white;
     }
     p {
       width: 45rem;
 
-      color: white;
-      line-height: 2.5rem;
+      color: rgb(201, 201, 201);
+      line-height: 2.9rem;
       margin-top: 2rem;
       font-size: 1.4rem;
     }
@@ -456,6 +457,7 @@
 }
 //! _________________________THIRD DIVISION MOBILE FIRST
 #thirdDivision-mobile-first {
+  height: 45rem;
   @include media('>=940px') {
     display: none !important;
   }
@@ -477,7 +479,6 @@
     // background-color: red;
     position: relative;
     width: 100%;
-    height: 40rem;
     #bg-circle-pattern-d3 {
       @include media('<=415px') {
         height: 130%;
@@ -514,7 +515,8 @@
         width: 80%;
       }
       text-align: center;
-      color: #a9a9a9;
+      color: rgb(201, 201, 201);
+
       line-height: 3.2rem;
       margin-top: 2rem;
       font-size: 1.6rem;
